@@ -4,6 +4,9 @@
 DESCRIPTION = "Package group for i.MX Qt5"
 LICENSE = "MIT"
 
+# disable sanity check for allarch packagegroup
+PACKAGE_ARCH = "${TUNE_PKGARCH}"
+
 inherit packagegroup
 
 # Install Freescale QT demo applications
